@@ -4,7 +4,7 @@ const video = document.getElementById('video');
 video.onclick = function() {
   video.play();
   video.onclick = null;
-  pokedexAbierta = true; // ahora la Pokédex está abierta
+  pokedexAbierta = true;
 };
 
 async function getPokemon(pokemonName) {
@@ -33,7 +33,7 @@ const searchBtn = document.getElementById('searchBtn');
 const clearBtn = document.getElementById('clearBtn');
 
 searchBtn.addEventListener('click', () => {
-  if (!pokedexAbierta) return; // si está cerrada, no hace nada
+  if (!pokedexAbierta) return; 
   const pokemonName = input.value;
   if (pokemonName) {
     getPokemon(pokemonName);
@@ -43,7 +43,7 @@ searchBtn.addEventListener('click', () => {
 input.addEventListener('keydown', (event) => {
   if (event.key === 'Enter') {
     event.preventDefault();
-    if (!pokedexAbierta) return; // bloquea Enter si está cerrada
+    if (!pokedexAbierta) return; 
     const pokemonName = input.value;
     if (pokemonName) {
       getPokemon(pokemonName);
