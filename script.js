@@ -17,7 +17,7 @@ async function getPokemon(pokemonName) {
     const stats = data.stats.map(s => `${s.stat.name.toUpperCase()}: ${s.base_stat}`).join('<br>');
 
     document.getElementById('pokedex').innerHTML = `
-      <img src="${image}" alt="${data.name}" class="img-fluid"><br>
+      <img src="${assets/image}" alt="${data.name}" class="img-fluid"><br>
       <strong>NAME:</strong> ${data.name.toUpperCase()}<br>
       <strong>TYPE:</strong> ${types}<br>
       <strong>STATS:</strong><br>${stats}
