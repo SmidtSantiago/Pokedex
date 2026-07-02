@@ -67,7 +67,7 @@ body {
   font-size: clamp(0.7rem, 1.5vw, 0.9rem);
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  flex: 1; /* que ambos botones ocupen el mismo ancho */
+  flex: 1; 
 }
 
 #pokedex-opc button:hover {
@@ -104,7 +104,6 @@ body {
   padding-top: 25%;
 }
 
-/* Responsivo: en pantallas chicas los botones se apilan */
 @media (max-width: 480px) {
   #pokedex-opc .buttons {
     flex-direction: column;
