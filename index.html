@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-3 text-center" id="izq">
+            <img src="assets/logo.png" alt="logo" id="logo" class="img-fluid">
+            <div id="pokedex-opc">
+                <input type="text" id="selectPokemon" placeholder="Pokédex">
+                <button id="searchBtn">Buscar</button>
+                <button id="clearBtn">Eliminar</button>
+                <img src="assets/Hunter.png" alt="Hunter" id="char2" class="img-fluid">
+                <img src="assets/pokeball.png" alt="Pokeball" id="char4" class="img-fluid">
+            </div>
+        </div>
+        <div class="col-6 text-center position-relative" id="col-pokedex">
+            <video id="video"><source src="assets/pokedex.webm" type="video/webm" class="img-fluid"></video>
+            <div class="row">
+                <div class="col-12" id="pokedex-opc">
+                    <div id="pokedex"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 text-center" id="der">
+            <img src="assets/logo.png" alt="logo" id="logo" class="img-fluid">
+            <img src="assets/char1.png" alt="Characters" id="char" class="img-fluid">
+            <img src="assets/snorlax.png" alt="Snorlax" id="char3" class="img-fluid">
+        </div>
+     </div>
+
+</body>
+
+
+<script src="js/script.js"></script>
+</html>
